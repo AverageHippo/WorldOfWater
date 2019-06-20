@@ -8,7 +8,7 @@ body{
 #nav{
     background:dodgerblue;
     width:200px;
-    min-height:100vh;
+    min-height:100%;
     position:fixed;
     left:0;
     top:0;
@@ -21,13 +21,14 @@ body{
     height: auto;
 }
 #wrapper{
-    width:calc(100vw - 300px);
-    margin-left:300px;
+    /* background-color: red; */
+    width:calc(100% - 200px);
+    margin-left:200px;
     min-height: 100vh;
 }
 
 #productInfo{
-    width:100%;
+    margin:auto;
     margin:20px;
 }
 
@@ -51,28 +52,38 @@ body{
     margin:20px;
     margin-top:0;
     width:150px;
-    height:200px;
-    background:rgb(230,230,230);
+    height:210px;
+    background:rgb(250,250,250);
     text-align: center;
+    border-radius:10px;
+    transition:ease 0.3s;
 }
 
 .product img{
     width:70%;
-    height:80%;
+    height:75%;
     object-fit: contain;
 }
 
 .productDescription{
     z-index: 999;
+    box-sizing: border-box; 
     position:absolute;
-    width:100px;
-    height:75px;
+    width:150px;
+    padding:10px;
+    min-height:50px;
+    border-radius:10px;
     background:rgba(0,0,0, 0);
     color:rgba(0,0,0, 0);
     transition:ease 0.3s;
+    pointer-events: none;
+}
+
+.product:hover{
+    box-shadow: 0px 0px 38px -13px rgba(0,0,0,0.75);
 }
 
 .product:hover .productDescription{
-    background:rgba(0,0,0, 0.80);
+    background:rgba(0,0,0, 0.90);
     color:white;
 }
