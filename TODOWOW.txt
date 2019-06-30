@@ -1,0 +1,14 @@
+media queries : 
+	- nav at top
+	- single width col of products
+	- adjust width and position of wrapper
+	
+
+General style:
+	- align content of nav
+	- fix drop shadows on products, 
+	- add shadow to nav
+	- find solution for different resolution images.
+
+JS:
+	- generate product page with javascript 
