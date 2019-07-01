@@ -1,14 +1,16 @@
-media queries : 
-	- nav at top
-	- single width col of products
-	- adjust width and position of wrapper
+TODO for World of Water Website
 	
 
 General style:
-	- align content of nav
-	- fix drop shadows on products, 
-	- add shadow to nav
-	- find solution for different resolution images.
+	- Make truck animation display delivery schedule
+	- Do something for promotion section
+	- Google maps
+	- find solution for different resolution images. (images will all be the same size)
+
+Media queries : 
+	- nav at top
+	- single width col of products
+	- adjust width and position of wrapper
 
 JS:
-	- generate product page with javascript 
+	- generate product page with javascript instead of all markup
