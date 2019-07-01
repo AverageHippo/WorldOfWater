@@ -6,7 +6,7 @@ body{
 }
 h1{
     font-size: 32pt;
-    color:rgb(8, 90, 156)
+    color:rgba(0,0,0,0.8);
 }
 h1, h2, h3{
     text-align: center;
@@ -26,7 +26,7 @@ h1, h2, h3{
     left:0;
     top:0;
     color:white;
-    box-shadow: 0px 0px 35px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.45);
 }
 #nav img{
     display:block;
@@ -114,7 +114,7 @@ h1, h2, h3{
 }
 
 .product:hover{
-    box-shadow: 0px 0px 35px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.25);
 }
 
 .product:hover img{
@@ -141,10 +141,11 @@ h1, h2, h3{
 
 #promos{
     margin:auto;
+    margin-bottom:30px;
     width:90%;
     height:400px;
     border-radius:10px;
-    box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.25);
 }
 
 .truck_div{
@@ -168,6 +169,7 @@ h1, h2, h3{
 
 .truck_div:hover > #truck{
     animation-duration: 200ms;
+    animation-name: driving;
     animation-play-state: running;
 }
 
@@ -182,8 +184,8 @@ h1, h2, h3{
     width:100%;
     height:auto;
     margin-top:0px;
-    animation-name: driving;
-    animation-duration: 800ms;
+    animation-name: drivingSlow;
+    animation-duration: 500ms;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
     /* animation-play-state: paused; */
@@ -209,10 +211,16 @@ h1, h2, h3{
     100% { transform: translateY(0px);  }
 }
 
+@keyframes drivingSlow{
+    0%   { transform: translateY(0px);  }
+    50%  { transform: translateY(1px);  }
+    100% { transform: translateY(0px);  }
+}
+
 @keyframes puff{
-    0%   {opacity:0; transform: scale(0.0); transform: translateX(15px); }
+    0%   {opacity:0; transform: scale(0.0); transform: translateX(25px); }
     50%  {opacity:1; transform: scale(0.5); transform: translateX(0px);}
-    100% {opacity:0; transform: scale(1.0); transform: translateX(-15px);}
+    100% {opacity:0; transform: scale(1.0); transform: translateX(-25px);}
 }
 
 #delivery{
@@ -227,7 +235,7 @@ h1, h2, h3{
     right:calc(100vw - 210px);
     border-radius: 10px;
     transition:ease 0.3s;
-    box-shadow: 0px 0px 35px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.25);
 }
 
 #delivery::after{
@@ -289,7 +297,7 @@ h1, h2, h3{
         background:dodgerblue;
         color:white;
         display:flex;
-        box-shadow: 0px 0px 35px -9px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.45);
     }
 
     #footer p{
