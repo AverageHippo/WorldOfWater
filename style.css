@@ -44,7 +44,7 @@ h1, h2, h3{
     padding-left:225px;
     width:calc(100% - 225px);
     min-height: 100vh;
-    max-width:1300px;
+    max-width:1500px;
 }
 
 #productInfo{
@@ -159,7 +159,7 @@ h1, h2, h3{
     text-align: left;
 }
 
-#promos img{
+#printImg{
     cursor: pointer;
     position: absolute;
     width:50px;
@@ -238,9 +238,9 @@ h1, h2, h3{
 }
 
 @keyframes puff{
-    0%   {opacity:0; transform: scale(0.0); transform: translateX(25px); }
-    50%  {opacity:1; transform: scale(0.5); transform: translateX(0px);}
-    100% {opacity:0; transform: scale(1.0); transform: translateX(-25px);}
+    0%   { opacity:0; transform: scale(0.0); transform: translateX(25px);  }
+    50%  { opacity:1; transform: scale(0.5); transform: translateX(0px);   }
+    100% { opacity:0; transform: scale(1.0); transform: translateX(-25px); }
 }
 
 #delivery{
@@ -283,15 +283,11 @@ h1, h2, h3{
     }
 
     #nav{
-        /* transform: translateY(20px); */
         width:100%;
         margin:auto;
         height:200px;
         position:inherit;
         top:0px;
-        /* border-radius: 50%; */
-        /* box-shadow: none; */
-        /* background: transparent; */
     }
     #nav img{
         padding-top:20px;
@@ -309,7 +305,6 @@ h1, h2, h3{
         padding-left:0px;
         width:100%;
         min-height: 100vh;
-        /* max-width:1300px; */
     }
 
     #footer{
@@ -354,6 +349,12 @@ h1, h2, h3{
     }
 }
 
+@media (min-width:1400px){
+    #productInfo{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media print {
     html, body {
         height:100vh; 
@@ -362,7 +363,7 @@ h1, h2, h3{
         overflow: hidden;
     }
 
-    #wrapper * , #nav, #promos img{
+    #wrapper * , #nav, #printImg{
         display: none;
     }
 
