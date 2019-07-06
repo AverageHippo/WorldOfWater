@@ -365,8 +365,10 @@ h1, h2, h3{
     height:500px;
     width:90%;
     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.45);
+    border-radius: 10px;
 }
 .gmap_canvas {
+    border-radius: 10px;
     overflow:hidden;
     background:none!important;
     height:500px;
