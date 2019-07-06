@@ -2,15 +2,10 @@ TODO for World of Water Website
 	
 
 General style:
-	- Make truck animation display delivery schedule
-	- Do something for promotion section
 	- Google maps
-	- find solution for different resolution images. (images will all be the same size)
+	- find solution for different resolution images?. (images will all be the same size)
 
-Media queries : 
-	- nav at top
-	- single width col of products
-	- adjust width and position of wrapper
+Media queries :
 
 JS:
-	- generate product page with javascript instead of all markup
+	- generate product page with javascript instead of all markup 
