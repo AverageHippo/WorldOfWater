@@ -4,14 +4,15 @@ body{
     background: rgb(242,242,242);
     font-family: 'Rubik', sans-serif;
 }
+
 h1{
     font-size: 32pt;
     color:rgba(0,0,0,0.8);
 }
+
 h1, h2, h3{
     text-align: center;
     font-family: 'Montserrat Alternates', sans-serif;
-
 }
 
 #footer{
@@ -28,6 +29,7 @@ h1, h2, h3{
     color:white;
     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.45);
 }
+
 #nav img{
     display:block;
     margin:auto;
@@ -35,10 +37,12 @@ h1, h2, h3{
     height: auto;
     margin-bottom:30px;
 }
+
 #nav p{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 #wrapper{
     margin: auto;
     padding-left:225px;
@@ -152,7 +156,7 @@ h1, h2, h3{
     border:dashed 3px grey;
     border-radius:20px;
     box-sizing: border-box;
-    /* box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.25); */
+    background: rgb(250,250,250);
 }
 
 #promos h2{
@@ -169,7 +173,6 @@ h1, h2, h3{
 }
 
 .truck_div{
-    /* transform:scale(-1,1); */
     position: fixed;
     top:calc(100vh - 300px);
     right:calc(100vw - 170px);
@@ -197,8 +200,6 @@ h1, h2, h3{
     display:inline-block;
 }
 
-
-
 #truck{
     grid-area: truck;
     width:100%;
@@ -208,7 +209,6 @@ h1, h2, h3{
     animation-duration: 500ms;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
-    /* animation-play-state: paused; */
 }
 
 #smoke{
@@ -253,7 +253,7 @@ h1, h2, h3{
     color:black;
     position: fixed;
     top:calc(100vh - 370px);
-    right:calc(100vw - 210px);
+    right:calc(100vw - 215px);
     transform: translateY(calc(-100% + 50px));
     border-radius: 10px;
     transition:ease 0.3s;
@@ -279,6 +279,9 @@ h1, h2, h3{
 
 #delivery p{
     margin-top:-10px;
+    font-size:10.5pt;
+    box-sizing: border-box;
+    padding:0 30px 0 30px;
 }
 
 @media (max-width:1000px){
@@ -365,8 +368,9 @@ h1, h2, h3{
     height:500px;
     width:90%;
     border-radius: 10px;
-    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.25);
+    box-shadow: 0px 10px 17px -5px rgba(0,0,0,0.2);
 }
+
 .gmap_canvas {
     border-radius: 10px;
     overflow:hidden;
@@ -380,12 +384,6 @@ h1, h2, h3{
         font-size: 9pt;
     }
 }
-
-/* @media (min-width:1600px){
-    #productInfo{
-        grid-template-columns: repeat(3, 1fr);
-    }
-} */
 
 @media print {
     html, body {
