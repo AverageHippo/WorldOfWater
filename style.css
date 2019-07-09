@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Odachi";
+    src: url("Fonts/Odachi/Odachi.otf");
+}
 body{
     margin:0;
     padding:0;
@@ -5,14 +9,16 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 
-h1{
-    font-size: 32pt;
-    color:rgba(0,0,0,0.8);
-}
 
 h1, h2, h3{
     text-align: center;
-    font-family: 'Montserrat Alternates', sans-serif;
+    /* font-family: 'Odachi', sans-serif; */
+}
+
+h1{
+    font-size: 40pt;
+    color:#3E6680;
+    font-family: 'Odachi', sans-serif;
 }
 
 #footer{
