@@ -2,10 +2,7 @@ TODO for World of Water Website
 	
 
 General style:
-	- Google maps
 	- find solution for different resolution images?. (images will all be the same size)
-
-Media queries :
 
 JS:
 	- generate product page with javascript instead of all markup 
