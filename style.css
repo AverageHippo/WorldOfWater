@@ -16,9 +16,10 @@ h1, h2, h3{
 }
 
 h1{
-    font-size: 40pt;
+    font-size: 25pt;
     color:#3E6680;
-    font-family: 'Odachi', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
 }
 
 #footer{
@@ -177,6 +178,10 @@ h1{
     height:auto;
     right:25px;
     top:25px;
+}
+
+footnote{
+    font-size:7pt;
 }
 
 .truck_div{
